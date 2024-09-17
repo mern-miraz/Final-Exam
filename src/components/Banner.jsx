@@ -40,6 +40,7 @@ const Banner = () => {
   .then(()=>{
     toast.success("Successfully Submitted verified Your Email");
     sendEmailVerification(auth.currentUser);
+    setName("");
     setEmail("");
     setPassword("");
     setTimeout(() => {
